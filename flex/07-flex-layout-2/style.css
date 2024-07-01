@@ -5,9 +5,13 @@ body {
 }
 
 .header {
-  height: 72px;
+  display: flex;
+  align-items: center;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 900;
+  padding: 16px;
 }
 
 .footer {
@@ -20,10 +24,61 @@ body {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar a,
+.sidebar a:link {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.sidebar {
+  padding: 16px;
+}
+
+.deck {
+  display: flex;
+  padding: 48px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  padding: 10px;
+  width: 300px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
